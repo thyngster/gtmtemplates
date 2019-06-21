@@ -1,5 +1,5 @@
-# Yandex Metrica
-This is an **unofficial** tag template for Yandex Metrica.
+# Algolia Search Insights
+This is an **unofficial** tag template for Algolia Search Insights.
 
 # Author
 David Vallejo (https://www.thyngster.com/).
@@ -7,39 +7,32 @@ David Vallejo (https://www.thyngster.com/).
 # Release notes
 | Date | Notes |
 |------|-------|
-| 3 June 2019  | First version of the tag released. |
-| 14 June 2019 | Updates, new features, bug fixes, check changelog. |
+| 21 June 2019 | Updates, new features, bug fixes, check changelog. |
 
 # Details
-See [this article](https://www.thyngster.com/google-tag-manager-custom-template-yandex-metrica/) for details about how the template works. 
+See [this article](https://www.thyngster.com/google-tag-manager-custom-template-algolia-search-insights/) for details about how the template works. 
 
-# Currently Supported Tracking Features
-- Pageviews
-- Goals
-- Outbound Links
-- File Downloads
-- Session Parameters
-- User Parameters
-- User ID
-- Not Bounces
-- Ecommerce Tracking ( based on a dataLayer )
+# Currently Supported Tracking Events
+- viewedFilters
+- viewedObjectIDs
+- clickedObjectIDsAfterSearch
+- clickedObjectIDs
+- clickedFilters
+- convertedObjectIDsAfterSearch
+- convertedObjectIDs
+- convertedFilters
+
+# Supported Fields
+- userToken
+- index
+- eventName
+- objectIDs
+- filters
+- queryID
+- positions
 
 # Settings supported
-- Enable/Disable Click Maps
-- Enable/Disable Webvisor
-- Enable/Disable Accurate Bounce Rate Tracking
-- Enable/Disable Links Tracking
-- Enable/Disable Sending Pages to Yandex Index
-- Enable/Disable Hashes Tracking
-- Enable/Disable Library Loading from CDN 
-- Enable/Disable Pageview defer ( not send a pageview on Init, for SPA sites )
-- Enable/Disable Debugging Feature
-
-# ChangeLog 14 June 2019
-- Fixed Ecommerce Setup . It was not being initilized.
-- Minor UI Reorganization
-- Added Session Parameters Tracking
-- Added User Parameters Tracking
-- Added userID Tracking
-- Added not-Bounce Tracking
-- Fixed Debug being reset on after init methods
+- Manage if the current user has Opted Out
+- Override the default cookie duration (default value 6 months)
+- Region value setting from the Init Tag
+- User Token persistance. You can define the User Token within the Init tag and it will be persisted to the subsecuent events sent to Algolia Search Insights
